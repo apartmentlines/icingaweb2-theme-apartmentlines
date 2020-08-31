@@ -5,13 +5,18 @@
  *  - Links and buttons
  *  - Highlighting
  */
-@icinga-blue: #2196F3;
+@accent-blue: #0092ce;
+@background-header: #373737;
 
 #login {
-  background-color: black;
+  background-color: #373737;
+  background-image: none !important;
 
   input[type=submit] {
-    background-color: @icinga-blue;
+    background-color: @accent-blue;
+  }
+  #social {
+    display: none;
   }
 }
 
@@ -20,38 +25,37 @@
  */
 #icinga-logo {
   // TODO
-  background-image: url('../img/company/logo-white.svg');
+  background-image: url('../img/apartmentlines-theme/al-logo.png');
 
   &.invert {
     // The logo shown on white background (DEFAULT)
-    background-image: url('../img/company/logo-blue.svg');
+    background-image: url('../img/apartmentlines-theme/al-logo.png');
+  }
+}
+
+#header {
+  background-color: @background-header;
+  #header-logo-container {
+    padding: 0.5em;
+    background-color: #fff;
+    border-right: 1px solid @background-header;
   }
 }
 
 /*
- * The logo container in the main menu
- * Adjusting the padding here to have a larger logo
- */
-#header-logo-container {
-  padding: 0.5em;
-}
-
-/*
  * Logo link shown in the main menu
- *
- * Background below is @icinga-blue
  */
 #header-logo {
-  background-image: url('../img/company/logo-white.svg');
+  background-image: url('../img/apartmentlines-theme/al-logo.png');
 }
 
 /*
  * Logo on mobile devices
  */
 #mobile-menu-logo {
-  background-image: url('../img/company/logo-white.svg');
+  background-image: url('../img/apartmentlines-theme/al-logo.png');
 }
 
 #layout:not(.minimal-layout).sidebar-collapsed #header-logo {
-  background-image: url('../img/company/logo-white-compact.svg');
+  background-image: url('../img/apartmentlines-theme/al-logo.png');
 }
